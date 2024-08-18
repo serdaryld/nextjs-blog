@@ -18,7 +18,7 @@ const PostCard = ({ post }) => (
       <div className="block lg:flex items-center mb-4">
           <span className="font-medium text-gray-500 pl-0.5">{moment(post.createdAt).format('MMM DD, YYYY')}</span>
       </div>
-      <h1 className="inline-block transition duration-100 mb-2 cursor-pointer hover:underline text-3xl font-semibold">
+      <h1 className="inline-block hover:underline mb-2 cursor-pointer text-2xl lg:text-3xl font-semibold">
         <Link href={`/post/${post.slug}`}>{post.title}</Link>
       </h1>
       <p className="text-lg text-gray-700 font-normal mb-4 line-clamp-2 overflow-hidden text-ellipsis">

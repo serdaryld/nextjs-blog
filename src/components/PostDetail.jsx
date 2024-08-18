@@ -7,10 +7,10 @@ const PostDetail = ({ post }) => {
   return (
     <div className="rounded-lg lg:p-3 pb-12 mb-8">
       <div className="relative overflow-hidden mb-6">
-        <img src={post.featuredImage.url} alt="" className="object-top h-40 md:h-60 lg:h-80 w-full object-cover rounded-lg" />
+        <img src={post.featuredImage.url} alt="" className="object-top h-full max-h-96 w-full object-cover rounded-lg" />
       </div>
       <div>
-        <h1 className="mb-4 text-3xl font-semibold">{post.title}</h1>
+        <h1 className="mb-4 text-2xl lg:text-3xl font-semibold">{post.title}</h1>
         <div className="flex items-center mb-14 w-full">
           <span className="align-middle font-medium text-gray-700 pl-0.5">{moment(post.createdAt).format('MMM DD, YYYY')}</span>
           <div className="flex flex-wrap ml-4 ">

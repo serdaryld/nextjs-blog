@@ -23,7 +23,7 @@ export default async function CategoryPost({ params }) {
   if (loading) return <Loader />;
 
   return (
-    <div className="container mx-auto px-10 mb-8">
+    <div className="container mx-auto lg:px-10 mb-8">
       <h1 className='inline-block m-4 mb-10 font-semibold text-2xl cursor-pointer' 
        style={{ color: category.color.hex }}>#{slug}</h1>
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">

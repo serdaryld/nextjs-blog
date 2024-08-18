@@ -1,10 +1,12 @@
-'use client'
+'use client';
 
 import React from 'react';
 import useEmblaCarousel from 'embla-carousel-react';
+import Autoplay from 'embla-carousel-autoplay';
 
 const Carousel = ({ slides, options }) => {
-  const [emblaRef, emblaApi] = useEmblaCarousel(options);
+  const autoplayOptions = { delay: 6000 }; 
+  const [emblaRef] = useEmblaCarousel(options, [Autoplay(autoplayOptions)]);
 
   return (
     <section className="embla">
