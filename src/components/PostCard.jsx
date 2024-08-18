@@ -4,13 +4,13 @@ import moment from 'moment';
 import Link from 'next/link';
 
 const PostCard = ({ post }) => (
-  <div className="rounded-lg pb-12 my-3 mx-4 mb-8 hover:shadow-md transition duration-800 group">
+  <div className="rounded-lg pb-12 my-3 mx-4 mb-8 lg:hover:shadow-md transition duration-800 group">
     <div className="relative overflow-hidden pb-40 md:pb-60 lg:pb-80 mb-6">
      <Link href={`/post/${post.slug}`}>
       <img
         src={post.featuredImage.url}
         alt=""
-        className="object-top absolute h-40 md:h-60 lg:h-80 w-full object-cover rounded-lg transition-all duration-400 group-hover:rounded-b-none"
+        className="object-top absolute h-40 md:h-60 lg:h-80 w-full object-cover rounded-lg transition-all duration-400 lg:group-hover:rounded-b-none"
       />
      </Link> 
     </div>

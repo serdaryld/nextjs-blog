@@ -27,12 +27,12 @@ export default async function CategoryPost({ params }) {
       <h1 className='inline-block m-4 mb-10 font-semibold text-2xl cursor-pointer' 
        style={{ color: category.color.hex }}>#{slug}</h1>
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
-        <div className="col-span-1 lg:col-span-8">
+        <div className="col-span-1 lg:col-span-9">
           {posts.map((post, index) => (
             <PostCard key={index} post={post.node || post} />
           ))}
         </div>
-        <div className="col-span-1 lg:col-span-4">
+        <div className="col-span-1 lg:col-span-3">
           <div className="relative lg:sticky top-8">
             <Categories />
           </div>

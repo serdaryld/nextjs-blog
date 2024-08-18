@@ -5,7 +5,7 @@ import useEmblaCarousel from 'embla-carousel-react';
 import Autoplay from 'embla-carousel-autoplay';
 
 const Carousel = ({ slides, options }) => {
-  const autoplayOptions = { delay: 6000 }; 
+  const autoplayOptions = { delay: 5000 }; 
   const [emblaRef] = useEmblaCarousel(options, [Autoplay(autoplayOptions)]);
 
   return (
