@@ -9,7 +9,7 @@ export default async function Header() {
       <div className="w-full inline-block border-b border-black py-8 pr-2">
         <div className="md:float-left block">
           <Link href="/">
-            <span className="cursor-pointer font-bold text-4xl ">Blogg</span>
+            <img src='/logo.png' className='w-auto h-10 pb-1'/>
           </Link>
         </div>
         <div className="hidden md:float-left md:contents">

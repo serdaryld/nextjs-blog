@@ -1,19 +1,19 @@
 import React from 'react';
 import { Layout } from '@/components';
-import { Raleway, Montserrat } from "next/font/google";
+import { Raleway, Montserrat, Bitter } from "next/font/google";
 import "./globals.scss";
 
-const montserrat = Montserrat({ subsets: ["latin"] });
+const bitter = Bitter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Blogg",
+  title: "Connavale",
   description: "A blog site",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={montserrat.className}>
+      <body className={bitter.className}>
         <Layout>
           {children}
         </Layout>

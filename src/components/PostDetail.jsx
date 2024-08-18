@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 const PostDetail = ({ post }) => {
   return (
-    <div className="rounded-lg lg:p-3 pb-12 mb-8">
+    <div className="rounded-lg lg:px-4 lg:py-3 pb-12 mb-8">
       <div className="relative overflow-hidden mb-6">
         <img src={post.featuredImage.url} alt="" className="object-top h-full max-h-96 w-full object-cover rounded-lg" />
       </div>
