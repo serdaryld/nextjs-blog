@@ -9,18 +9,31 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@graphcms/rich-text-react-renderer": "^0.6.1",
+    "embla-carousel": "^8.1.8",
+    "embla-carousel-react": "^8.1.8",
+    "graphql": "^16.9.0",
+    "graphql-request": "^7.1.0",
+    "html-react-parser": "^5.1.12",
+    "lodash": "^4.17.21",
+    "moment": "^2.30.1",
+    "next": "14.2.5",
     "react": "^18",
     "react-dom": "^18",
-    "next": "14.2.5"
+    "react-multi-carousel": "^2.8.5",
+    "react-slick": "^0.30.2",
+    "sass": "^1.77.8",
+    "slick-carousel": "^1.8.1",
+    "ua-parser-js": "^1.0.38"
   },
   "devDependencies": {
-    "typescript": "^5",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.5",
     "postcss": "^8",
     "tailwindcss": "^3.4.1",
-    "eslint": "^8",
-    "eslint-config-next": "14.2.5"
+    "typescript": "^5"
   }
 }
