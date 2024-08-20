@@ -18,7 +18,6 @@ const PostWidget = async ({ categories, slug }) => {
   }
 
   return (
-    <>
     <div className="rounded-lg py-2 px-4 pb-4 mb-12">
       <h3 className="text-xl mb-6 border-b border-gray-300 pb-4">{slug ? 'Related Posts' : 'Recent Posts'}</h3>
       {relatedPosts.map((post, index) => (
@@ -32,7 +31,6 @@ const PostWidget = async ({ categories, slug }) => {
         </Link>
       ))}
     </div>
-    </>
   );
 };
 

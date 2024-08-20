@@ -4,7 +4,7 @@ import moment from 'moment';
 import Link from 'next/link';
 
 const PostCard = ({ post }) => (
-  <div className="rounded-lg pb-12 my-3 mx-4 mb-8 lg:hover:shadow-md transition duration-800 group">
+  <div className="relative rounded-lg pb-12 my-3 mx-4 mb-8 lg:hover:shadow-md transition duration-800 group overflow-hidden">
     <div className="relative overflow-hidden pb-40 md:pb-60 lg:pb-80 mb-6">
      <Link href={`/post/${post.slug}`}>
       <img
@@ -30,6 +30,11 @@ const PostCard = ({ post }) => (
           Continue Reading</span>
         </Link>
       </div>
+    </div>
+    <div className="flex flex-wrap space-x-2 absolute top-2 right-2 md:right-0 md:transform md:translate-x-full md:group-hover:-translate-x-2 transition-all duration-500">
+            {post.category.map((cat, index) => (
+               <Link href={`/category/${cat.slug}`} key={index} className='bg-gray-800 text-white text-xs font-semibold px-2 py-1 rounded-lg'>#{cat.slug}</Link>
+            ))}
     </div>
   </div>
 );

@@ -8,7 +8,7 @@ export default async function Comments({ slug }) {
   if (comments.length === 0) return null;
 
   return (
-    <div className="p-2 pb-12 mb-8">
+    <div className="py-2 px-4 pb-12 mb-8">
       <h3 className="text-xl mb-6 border-b border-gray-300 pb-4">
         {comments.length} Comments
       </h3>
