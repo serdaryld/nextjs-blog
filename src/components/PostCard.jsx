@@ -33,7 +33,7 @@ const PostCard = ({ post }) => (
     </div>
     <div className="flex flex-wrap space-x-2 absolute top-2 right-2 md:right-0 md:transform md:translate-x-full md:group-hover:-translate-x-2 transition-all duration-500">
             {post.category.map((cat, index) => (
-               <Link href={`/category/${cat.slug}`} key={index} className='bg-black opacity-80 text-white text-xs font-semibold px-2 py-1 rounded-lg'>#{cat.slug}</Link>
+               <Link href={`/category/${cat.slug}`} key={index} className='bg-black opacity-90 text-white text-xs px-2 py-1 rounded-lg'>#{cat.slug}</Link>
             ))}
     </div>
   </div>

@@ -6,7 +6,7 @@ export default async function Header() {
 
   return (
     <div className="container mx-auto px-4 lg:px-14 mb-8">
-      <div className="w-full inline-block border-b border-black py-8 pr-2">
+      <div className="w-full inline-block border-b border-black py-6 md:py-8 pr-2">
         <div className="md:float-left block">
           <Link href="/">
             <img src='/logo.png' className='w-auto h-10 pb-1'/>
